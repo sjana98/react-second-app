@@ -194,13 +194,33 @@
 }
 
 
-/* Home Section-4 (Shop) */
+/* Home Section-4 (Promotion) */
+.promotion_section{
+    padding: 60px 0;
+    background: var(--light-grey);
+}
+.promotion_section h2{
+    font-size: 3.25rem;
+    margin-bottom: 25px;
+}
+.promotion_section p{
+    font-size: 1.125rem;
+}
+.promotion_section ul{
+    padding-left: 15px;
+}
+/* Home Section-4 (Promotion (BG Parallax)) */
+.bg_parallax_scroll{
+    background: url('../assets/parallax/bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+}
 
 
 
-
-
-/*Media Query for small, medium screen*/
+/*Media Queries*/
 @media (max-width: 767px) {
     /* Home Section-1 (Hero) */
     .hero_section .hero_text h1{
@@ -221,6 +241,20 @@
     }
     .about_box p{
         padding: 0;
+    }
+    
+}
+@media (max-width:1200px){
+    /* Home Section-4 (Promotion) */
+    .promotion_section h2{
+        font-size: 2.25rem;
+    }
+}
+@media (max-width:425px){
+    /* Home Section-4 (Promotion (BG Parallax)) */
+    .bg_parallax_scroll{
+        background-attachment: scroll;
+        height: 500px;
     }
 }
 
