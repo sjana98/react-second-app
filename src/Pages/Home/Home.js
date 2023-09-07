@@ -5,6 +5,7 @@ import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
 import Section4 from './Section4';
+import Section5 from './Section5';
 
 function Home() {
   return (
@@ -16,11 +17,14 @@ function Home() {
         {/* Home Section About */}
         <Section2 />
 
-        {/* Home Section Menu  */}
+        {/* Home Section Menu */}
         <Section3 />
 
-        {/* Home Section Promotion  */}
+        {/* Home Section Promotion */}
         <Section4 />
+
+        {/* Home Section Shop */}
+        <Section5 />
       </Layout>
     </>
   );
