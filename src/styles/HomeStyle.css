@@ -219,7 +219,7 @@
 }
 
 
-/* Home Section-4 (Shop) */
+/* Home Section-5 (Shop) */
 .shop_section{
     padding: 100px 0 0;
     background: var(--yellow);
@@ -267,13 +267,40 @@
 }
 
 
+/* Home Section-6 (Blog) */
+.blog_section{
+    overflow: hidden;
+    padding: 80px 0 50px;
+    background: url('../assets/blog/reviews.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.blog_section .user_img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin: 25px;
+}
+.blog_section .carousel.slide .carousel-inner .carousel-caption p{
+    font-size: 1.7rem;
+    line-height: 1.45;
+    font-weight: 400;
+    padding: 0 12%;
+    margin-bottom: 25px;
+}
+.carousel.slide .carousel-inner .carousel-caption i{
+    color: var(--yellow);
+    margin-right: 5px;
+}
+.carousel.slide .carousel-inner .carousel-caption h5{
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
 
 
 
-
-
-
-/*Media Queries*/
+/*Media Queries of Home page*/
 @media (max-width: 767px) {
     /* Home Section-1 (Hero) */
     .hero_section .hero_text h1{
@@ -299,6 +326,10 @@
     .brand_section .brand_img{
         width: 70px;
         height: auto;
+    }
+    /* Home Section-6 (Blog) */
+    .blog_section .carousel.slide .carousel-inner .carousel-caption p{
+        font-size: 1rem;
     }
 }
 @media (max-width: 992px) {
