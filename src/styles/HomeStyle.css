@@ -297,10 +297,34 @@
     font-size: 1rem;
     margin-bottom: 2rem;
 }
+/* Home Section-7 (Contact) */
+.contact_section{
+    background: url('../assets/footer/banner-1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+}
+.contact_section h4{
+    font-size: 2.375rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.contact_section h2{
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+}
+.contact_section p{
+    width: 70%;
+    margin: 0 auto 30px;
+}
+.contact_section a{
+    font-size: 22px;
+    font-weight: 700;
+}
 
 
 
-/*Media Queries of Home page*/
+
+/*==MEDIA QUEARIES FOR HOME PAGE==*/
 @media (max-width: 767px) {
     /* Home Section-1 (Hero) */
     .hero_section .hero_text h1{
@@ -343,12 +367,18 @@
     .about_box p{
         padding: 0;
     } 
-     
 }
 @media (max-width:1200px){
     /* Home Section-4 (Promotion) */
     .promotion_section h2{
         font-size: 2.25rem;
+    }
+    /* Home Section-7 (Contact) */
+    .contact_section p{
+        width: 100%;
+    }
+    .contact_section h2{
+        font-size: 3.5rem;
     }
 }
 @media (max-width:425px){
@@ -356,6 +386,10 @@
     .bg_parallax_scroll{
         background-attachment: scroll;
         height: 500px;
+    }
+    /* Home Section-7 (Contact) */
+    .contact_section a{
+        font-size: 18px;
     }
 }
 
