@@ -47,3 +47,30 @@ footer .copy_right ul li:after{
 footer .copy_right ul li:last-child:after{
     display: none;
 }
+
+/* Scroll Top Arrow */
+.scroll_top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 99;
+    cursor: pointer;
+    width: 2.7rem;
+    height: 2.7rem;
+    line-height: 3rem;
+    text-align: center;
+    background: var(--light-red);
+    border-radius: 50%;
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--white);
+    animation: updown 1.3s linear infinite;
+}
+@keyframes updown {
+    0%,100%{
+        transform: translate(0px, 0px);
+    }
+    50%{
+        transform: translate(0px, 3px);
+    }
+}

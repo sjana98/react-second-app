@@ -1,10 +1,31 @@
-import React from 'react';
+import React, {useState, useEffect}  from 'react';
 import '../../styles/FooterStyle.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 function Footer() {
+    
+  // State
+  const [isVisible, setisVisible] = useState(false);
+
+  const scrollTo = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
   
+  const listenToScroll = () => {
+    const heightToHidden = 1100;
+    const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    windowScroll > heightToHidden ? setisVisible(true) : setisVisible(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', listenToScroll);
+  });
+
+
   return (
     <>
       <footer>
@@ -72,8 +93,13 @@ function Footer() {
         </Container>
       </footer>
 
-      {/* Scroll to top */}
       
+      {/* Scroll to top */}
+      {isVisible && (
+        <div className="scroll_top" onClick={scrollTo}>
+          <i class='bi bi-arrow-up'></i>
+        </div>
+      )}
     </>
   )
 }
